@@ -1,4 +1,3 @@
-import Footer from "../ui/Footer";
 import Heading from "../ui/Heading";
 import { FaGithub, FaLinkedin, FaXTwitter  } from "react-icons/fa6";
 import { BsFillThreadsFill } from "react-icons/bs";
@@ -22,7 +21,9 @@ export default function Contact({
 
 
   return (
-    <section id="contact" aria-label="contact">
+    
+    <section id="contact" aria-label="contact" className="min-h-screen bg-[#830f92]">
+      <Heading title="Contact" />
       <div>
         <h3 ref={headingRef} aria-label="contact">
           Have an awsome idea? Lest&apos; bring it to life.
@@ -167,8 +168,8 @@ export default function Contact({
         </div>
       </div>
       <div>
-        <Heading title="Contact" />
-        <Footer />
+        
+        
       </div>
     </section>
   );
